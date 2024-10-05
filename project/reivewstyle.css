@@ -1,0 +1,214 @@
+
+body {
+    width: 100%;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* Navbar container */
+.navbarr {
+    background-color: rgba(255, 255, 255, 0); /* White background */
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+   
+}
+
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    background-color: #ffdd94;
+    color: #19313b98;
+    border: none;
+    border-radius:10px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right:15px;
+}
+
+
+/* Navbar Links */
+.nav-pills .nav-link {
+    margin-right: 12px;
+    color: #ffdd94;
+    background-color: #19313b98;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+    color: #ffdd94;
+    background-color: #17323d; /* Change color on hover */
+}
+
+.logo {
+    height: 50px; /* Set a fixed height for the logo */
+    margin-right: 10px; 
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px  rgba(175, 137, 55, 0.749);
+}
+
+.aakam {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #ffdd94; 
+    text-transform: uppercase; 
+    margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+    .navbar-toggle {
+        display: block; /* Show toggle button on mobile */
+        top: 10px; 
+        left: 10px; 
+    }
+
+    #navbar-menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #navbar-menu.show {
+        display: flex; 
+    }
+
+    .nav-pills .nav-item {
+        text-align: center;
+        margin: 0; 
+    }
+}
+
+
+
+
+
+main {
+    background-color: #010e1e54;
+    color:#ffdd94;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+
+
+/* Reviews List Section */
+.reviews-list {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 30px; 
+    background-color: #ffffff00; 
+    border-radius: 10px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); 
+}
+
+.reviews-list img {
+    width: 650px; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.reviews-list img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+/*  Review Form Styles */
+
+.review-form {
+    max-width: 500px; 
+    margin: 50px auto; 
+    padding: 30px 40px;
+    background-color: #ffffff; 
+    border: 1px solid #e0e0e0;
+    border-radius: 8px; 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05); 
+}
+
+.review-form h2 {
+    text-align: center; 
+    color: #333333;
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    margin-bottom: 30px; 
+}
+.review-form form {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+}
+
+.review-form label {
+    font-size: 0.9rem; 
+    color: #666666; 
+    font-weight: 500;
+    margin-bottom: 5px; 
+}
+
+.review-form input[type="text"],
+.review-form select,
+.review-form textarea {
+    width: 100%; 
+    padding: 12px 15px;
+    border: 1px solid #cccccc; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    color: #333333; 
+    background-color: #fafafa; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.review-form input[type="text"]:focus,
+.review-form select:focus,
+.review-form textarea:focus {
+    border-color: #007bff; 
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.2); 
+    outline: none; 
+}
+
+.review-form button[type="submit"] {
+    padding: 14px 0; 
+    background-color: #007bff; 
+    color: #ffffff;
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1rem; 
+    font-weight: 500; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.review-form button[type="submit"]:hover {
+    background-color: #0056b3; 
+    box-shadow: 0 4px 8px rgba(0, 91, 179, 0.2); 
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    color: white;
+}

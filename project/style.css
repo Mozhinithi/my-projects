@@ -1,0 +1,441 @@
+
+body {
+    width: 100%;
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed ;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+/* Navbar container */
+.navbarr {
+    background-color: rgba(255, 255, 255, 0); /* White background */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-toggle {
+    display: none; /* Hidden by default */
+    background-color: #ffdd94;
+    color: #19313b98;
+    border: none;
+    border-radius:10px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right:15px;
+}
+
+
+/* Navbar Links */
+.nav-pills .nav-link {
+    margin-right: 12px;
+    color: #ffdd94;
+    background-color: #19313b98;
+    font-size: 1.2rem;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.nav-pills .nav-link:hover {
+    color: #ffdd94;
+    background-color: #17323d; /* Change color on hover */
+}
+
+.logo {
+    height: 50px; /* Set a fixed height for the logo */
+    margin-right: 10px; 
+    margin-left: 50px;
+    box-shadow: 5px 5px 5px  rgba(175, 137, 55, 0.749);
+}
+
+.aakam {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: #ffdd94; 
+    text-transform: uppercase; 
+    margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+    .navbar-toggle {
+        display: block; /* Show toggle button on mobile */
+        top: 10px; 
+        left: 10px; 
+    }
+
+    #navbar-menu {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    #navbar-menu.show {
+        display: flex; 
+    }
+
+    .nav-pills .nav-item {
+        text-align: center;
+        margin: 0; 
+    }
+}
+
+
+/*for text in the middle*/
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100px); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0); 
+        opacity: 1; 
+    }
+}
+
+
+
+.textcent {
+   text-align: center;          
+   background-color: #192b3700;; 
+   margin-top: 200px;  
+   opacity: 0; /* Start hidden */
+   animation: fall 2s ease-in-out forwards;
+   border-radius: 70px;    
+}
+
+.textcent h2 {
+    font-size: 2.5em;            
+    margin-bottom: 20px; 
+    color: #ffdd94;           
+}
+
+.textcent p {
+    font-size: 0.70em;
+    margin-bottom: 1px; 
+    color: #c0cfd2;       
+}
+
+
+
+/*Styles for the Hero Section */
+@keyframes fallr {
+    0% {
+        transform: translateX(-100px); 
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); 
+        opacity: 1; 
+    }
+}
+
+
+
+.container{
+    padding: 3px;
+    margin-top: 40vh;
+    width: 100%;
+    background-color: #1e4451; 
+    border-radius: 30px;
+    animation: fallr 5s ease-in-out forwards;
+    border-radius: 70px; 
+}
+
+
+.fallr-animation {
+    opacity: 0; 
+}
+
+.fallr-animation.animate {
+    animation: fall 2s ease-in-out forwards ; /* Trigger animation when class is added */
+}
+
+/* Heading Styles */
+
+h1.display-5 {
+    color: #ffdd94; 
+    font-weight: bold;
+    font-family: Garamond, serif;
+   
+  
+}
+
+/* Paragraph Text */
+.lead {
+    color: #c0cfd2; 
+    font-size: 1.1rem; 
+}
+
+img.d-block.mx-lg-auto.img-fluid {
+    border-radius: 20px; 
+    max-width: 100%; 
+    height: auto; 
+    
+}
+
+/* Bounce Animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+.btn-primary {
+    animation: bounce 1s infinite;
+}
+.btn-outline-secondary:hover {
+    animation: bounce 1s;
+}
+
+
+/* Primary Button Styles */
+.btn-primary {
+    background-color: #4293a3ad !important; 
+    border-color: #e5dde4 !important;
+    color: #fdfcfd !important;
+    transition: background-color 0.3s ease; 
+}
+
+/* Outline Secondary Button Styles */
+.btn-outline-secondary {
+    color: #d1cfcf !important; 
+    border-color: #767474 !important; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* Hover Effects */
+.btn-primary:hover {
+    background-color: #d7af3e36 !important; 
+}
+
+.btn-outline-secondary:hover {
+    color: #fff !important; 
+    background-color: #22ff3d00 !important;
+}
+
+
+
+.rating{
+    margin-top: 30px;
+    text-align: center;
+    background-color: #17323d68;
+    height: 300px;
+}
+
+.rating img{
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.rating h2{
+
+    font-size: 28px;
+    color: #ffdd94;
+
+}
+
+.rating p{
+    font-size: 17px;
+    color: #ffdd94;
+
+}
+.rating button{
+    background-color: #ffffff;
+    margin-top: 10px;
+    color: #694904;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.rating  button :hover{
+   background-color: #d7af3e36 !important; 
+}
+
+
+
+
+#contact {
+    background-color: #f9f9f900;
+    padding: 50px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffdd94;
+}
+
+#contact form {
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px ;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+
+#contact textarea {
+    height: 150px;
+    color: #17323d;
+}
+
+#contact button.btn {
+    background-color: #17323d;
+    color: #ffdd96;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact button.btn:hover {
+    background-color: #7dd4ec;
+}
+
+
+.mobile-contact {
+    background-color:#17323d00;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.mobile-contact p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: #d1cfcf;
+}
+.mobile-contact a {
+    color: #ffdd96;
+    background-color: #17323d;
+    text-decoration: none;
+}
+.mobile-contact a:hover {
+    text-decoration: underline;
+}
+
+
+/*cards*/
+h2{
+    color: white!important;
+    text-align: center;
+}
+
+
+
+.card-container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+
+.card {
+    background-color: #17323d!important;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    margin-left: 90px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1em;
+    color: #ffc267;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #97ecfb77;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-button:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+.footers{
+    margin-top: 15px;
+    background-color: #17323d6c;
+    padding: 15px 0;
+    }
+      
+      footer {
+        background-color: #ffffffa9; 
+        padding: 20px 0;
+        border-top: 1px solid #ffc456;
+      
+}
